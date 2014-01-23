@@ -1,0 +1,430 @@
+/* Overrides to bootstrapbase default css *
+ * ----------------------------------------------------- */
+
+body {
+    padding-top: 0;
+}
+.container-fluid {
+    padding-left: 0;
+    padding-right: 0;
+}
+.block, .forumpost, .courses .coursebox.even, .course_category_tree .category > .info, #page-footer .performanceinfo .cachesused .cache-definition-stats, .cache-store-stats.hihits, .cache-store-stats.nohits, .cache-store-stats.lowhits {
+    background-color:transparent;
+}
+.label {
+    text-align: left;
+    color: red;
+    white-space:normal;
+    font-size:1em;
+}
+.dir-rtl .label {
+    text-align: right;
+}
+.label {
+    color: red;
+}
+.breadcrumb > li + li:before {
+    content: "";
+    padding: 2px;
+
+}
+
+/* SPARKLE2 CORE *
+ * ************* */
+body {
+    background: url([[pix:theme|pagebackground]]) repeat;
+}
+/* Header *
+ *--------*/
+.mainheader {
+    border-radius: 7px;
+    border: 1px solid #1E1E1E;
+}
+.pageheading {
+    float: left;
+    height: 100px;
+}
+.dir-rtl .pageheading {
+    background: url([[pix:theme|logo]]) no-repeat 100% 0;
+    float: right;
+}
+.pageheading h1 {
+    margin-left: 130px;
+}
+.dir-rtl .pageheading h1 {
+    margin-right: 130px;
+}
+.breadcrumb {
+    border: 1px solid #1E1E1E;
+    border-radius: 7px;
+}
+.breadcrumb ul.breadcrumb {
+    border:none;
+}
+.breadcrumb-button input[type="submit"]{
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background-color: #5BB75B;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#62C462), to(#51A351)); /* Chrome, Safari 4+ */
+    background-image: -webkit-linear-gradient(top, #62C462, #51A351); /* Chrome 10-25, iOS 5+, Safari 5.1+ */
+    background-image:    -moz-linear-gradient(top, #62C462, #51A351); /* Firefox 3.6-15 */
+    background-image:      -o-linear-gradient(top, #62C462, #51A351); /* Opera 11.10-12.00 */
+    background-image:         linear-gradient(to bottom, #62C462, #51A351); /* Chrome 26, Firefox 16+, IE 10+, Opera 12.10+ */
+
+    background-repeat: repeat-x;
+    border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+    border-image: none;
+    border-radius: 4px 4px 4px 4px;
+    border-style: solid;
+    border-width: 1px;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2) inset, 0 1px 2px rgba(0, 0, 0, 0.05);
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 0;
+    padding: 4px 12px;
+    text-align: center;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+    vertical-align: middle;
+}
+.breadcrumb-button input[type="submit"]:hover {
+    background-color: #51a351;
+}
+.breadcrumb-button input[value="Blocks editing off"], .breadcrumb-button input[value="Stop customising this page"] {
+    background-color: #DA4F49;
+    background-image: linear-gradient(to bottom, #EE5F5B, #BD362F);
+    background-repeat: repeat-x;
+    border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+    color: #FFFFFF;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+}
+.breadcrumb-button input[value="Blocks editing off"]:hover,  .breadcrumb-button input[value="Stop customising this page"]:hover{
+    background-color: #BD362F;
+}
+.breadcrumb-button a{
+    color: #fff;
+}
+.navbar-inner {
+    border: 1px solid #1E1E1E;
+    border-radius: 7px;
+}
+.hidden-blocks {
+    border-radius:7px;
+}
+.hidden-blocks h2.title {
+    padding-left:10px;
+    border-bottom:1px dashed;
+}
+.useralerts .title {
+    font-weight:900;
+    margin-right:20px;
+}
+
+/* Style front page course list as boxes  - should be flexbox, but this is going
+ * to NEED flexwrap and as FF doesn't support that at present and would need this
+ * fallback anyway I've stuck to inline solution */
+#page-site-index #frontpage-course-list .courses {
+    display:inline;
+}
+#page-site-index #frontpage-course-list .courses .coursebox {
+    width:207px;
+    margin:5px 10px;
+    float:left;
+    border-radius:7px;
+    height:160px;
+    padding:0;
+    border: 1px solid;
+}
+#page-site-index #frontpage-course-list .courses .coursebox h3.coursename {
+    width:100%;
+    margin:0 auto;
+    height:50px;
+    overflow:hidden;
+    border-radius:6px 6px 0 0;
+    font-size:120%;
+    line-height:22px;
+    border-bottom:1px solid;
+}
+.coursebox > .info > .coursename a {
+    background-image: none;
+    padding: 3px 0 0 5px;
+    display:inline;
+}
+.coursebox > .info > .coursename:before {
+    margin-left:5px;
+}
+#page-site-index #frontpage-course-list .courses .coursebox .content .summary {
+    width:200px;
+    height:100px;
+    overflow:hidden;
+    position:absolute;
+    font-size:0.8em;
+}
+#page-site-index #frontpage-course-list .courses .coursebox .content .courseimage {
+    margin:0 auto;
+    float:none;
+    height:100px;
+    position:absolute;
+    width:205px;
+
+}
+#page-site-index #frontpage-course-list .courses .coursebox .content .courseimage img {
+    float:none;
+    width:205px;
+    max-width:100%;
+    max-height:100px;
+    height:110px;
+    border-radius:0 0 6px 6px;
+}
+#page-site-index #frontpage-course-list .courses .coursebox .content ul.teachers {
+    display:none;
+}
+#page-site-index #frontpage-course-list, #page-site-index #frontpage-category-names {
+    clear:both;
+}
+
+/* Edit Buttons *
+ * ------------ */
+.editing_update {
+    padding-left: 7px !important;
+}
+
+.editing_duplicate {
+    padding-right: 7px !important;
+}
+
+.editing_delete {
+    padding-right: 7px !important;
+    padding-left: 7px;
+    padding-right: 7px;
+}
+
+.commands {
+    font-family: FontAwesome;
+    font-size: 1.1em;
+}
+
+.commands img {
+    display: none;
+}
+
+#page-mod-glossary-view .commands img,
+#page-calendar-view .commands img {
+    display: inline;
+}
+
+.commands a {
+    padding-right: 5px;
+}
+
+.commands a:hover {
+    text-decoration: none;
+}
+
+.editing_delete::before {
+    content: "\f00d ";
+    color: red;
+    padding-right: 5px;
+}
+
+.editing_hide,
+.editing_show {
+    padding-left: 7px;
+}
+
+.moodle-actionmenu ul li a.toggle-display:before {
+    content: "\f160 ";
+    padding-left: 7px;
+}
+.editing_move {
+    padding-right: 7px !important;
+}
+
+.editing_move:hover {
+    cursor:move;
+}
+
+.editing_move::before {
+    content: "\f047 ";
+    color:#193D8B;
+}
+
+.editing_update::before,
+.editing_edit::before {
+    content: "\f013 ";
+    padding-right: 5px;
+}
+
+.editing_duplicate::before {
+    content: "\f0c5 ";
+    padding-right: 5px;
+}
+
+.editing_title img {
+    display: none !important;
+}
+
+.editing_title::before {
+    content: "\f040 ";
+    padding-right: 5px;
+}
+
+.editing_hide::before {
+    content: "\f06e ";
+}
+
+.editing_show::before {
+    content: "\f070 ";
+}
+
+.editing_assign::before,
+.editing_roles::before {
+    content: "\f084 ";
+    padding-right: 5px;
+}
+
+.editing_groupsnone::before {
+    content: "\f007 ";
+    padding-left: 7px;
+}
+
+.editing_groupsvisible::before {
+    content: "\f0c0 ";
+}
+
+.editing_groupsseparate::before {
+    content: "\f0c0 ";
+}
+.editing_showhide img,.editing_highlight img {
+    display:none;
+}
+.editing_showhide[title="Show topic"]:before {
+    font-family: FontAwesome;
+    text-decoration:none;
+    content: "\f070 ";
+    font-size:1.2em;
+}
+.editing_showhide[title="Hide topic"]:before {
+    font-family: FontAwesome;
+    text-decoration:none;
+    content: "\f06e ";
+    font-size:1.2em;
+}
+.editing_highlight:before {
+    font-family: FontAwesome;
+    text-decoration:none;
+    content: "\f0eb ";
+    font-size:1.2em;
+}
+.block_action img.block-hider-show:before {
+    font-family: FontAwesome;
+    content: "\f0eb ";
+}
+.section-modchooser-link:before {
+    font-family: FontAwesome;
+    content: "\f055 ";
+    padding-right:7px;
+    color:#666;
+}
+.section-modchooser-link img {
+    display:none;
+}
+.summary a[title="Edit summary"]:before {
+    font-family: FontAwesome;
+    content: "\f013 ";
+}
+.summary a[title="Edit summary"] img {
+    display:none;
+}
+.section-handle:before {
+    font-family: FontAwesome;
+    color:#666;
+    content: "\f047 ";
+}
+.section-handle img {
+    display:none;
+}
+.mform fieldset.collapsible legend a.fheader {
+    margin-left:0;
+}
+
+/* Login Page *
+ * ---------- */
+
+.loginbox {
+	width:450px;
+	margin:10px 0;
+}
+
+.loginbox .loginpanel, .loginbox.twocolumns .loginpanel {
+    margin: 25px 35px;
+    width: 380px;
+}
+.loginbox .signuppanel, .loginbox.twocolumns .signuppanel {
+	width:100%;
+	margin:10px 0;
+}
+.loginpanel, .signuppanel {
+	border-radius:8px;
+}
+.loginpanel h2:before {
+    font-family: FontAwesome;
+    content: "\f084 ";
+    padding:0 10px;
+}
+.loginpanel h2 {
+}
+.loginpanel .subcontent .desc {
+	display:none;
+	visibility:hidden;
+}
+.loginbox .loginform .form-label {
+    width: 20%;
+    margin-top:7px;
+    margin-left:5px;
+}
+.loginbox .loginform .form-label label {
+	font-weight:800;
+	font-size:1.2em;
+}
+.loginbox .loginform .form-input {
+    float: right;
+    width: 75%;
+}
+.loginbox .loginform .form-input input#username, .loginbox .loginform .form-input input#password {
+    width: 13em;
+}
+.loginbox .loginform .form-input input#username {
+	border-radius:10px 10px 0 0;
+	margin-bottom:2px;
+}
+.loginbox .loginform .form-input input#password {
+	border-radius:0 0 10px 10px;
+}
+.loginbox .loginform .form-input input#loginbtn {
+	background:url([[pix:theme|login]]) no-repeat;
+	border:none;
+	height:64px;
+	width:64px;
+	float:right;
+	margin-right: 0;
+    margin-top: -80px;
+    text-indent:-9999px;
+}
+@media screen and (max-width:500px) {
+body#page-login-index {
+ margin:0;
+ padding:0;
+}
+.loginbox, .loginbox.twocolumns {
+    margin: 0;
+    width:380px;
+}
+.loginbox .loginpanel, .loginbox.twocolumns .loginpanel {
+    margin: 15px 0;
+}
+}

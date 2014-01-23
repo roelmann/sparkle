@@ -1,0 +1,234 @@
+/* Body and main styles
+/ ---------------------- */
+body {
+    color: [[setting:themecolor]];
+    background: [[setting:themebackgroundcolor]] url([[setting:pagebackground]]) repeat;
+}
+h1, h2, h3 {
+    color: [[setting:themeheadercolor]];
+}
+a {
+    color: [[setting:themelinkcolor]];
+}
+a:hover, a:focus, a:active {
+    color: [[setting:themehovercolor]];
+}
+.mainheader {
+    background: [[setting:themeheaderbackgroundcolor2]] url([[pix:theme|rpsemboss]]) repeat left top;
+}
+.pageheading {
+    background: url([[setting:logo]]) no-repeat 3px 3px;
+}
+/* Blocks
+/ -------- */
+
+.block {
+    border-color: [[setting:themecolor]];
+    background-color: [[setting:themebackgroundcolor]];
+    padding:0;
+    box-shadow: 4px 4px 4px 0px [[setting:themeheaderbackgroundcolor2]]; /* Chrome 6+, Firefox 4+, IE 9+, iOS 5+, Opera 10.50+ */
+}
+.block .content {
+    background: [[setting:themebackgroundcolor]];
+    border-radius: 0 0 4px 4px;
+}
+.block .header {
+    background-color: [[setting:themeheaderbackgroundcolor1]];
+    background-image: -webkit-gradient(linear, left top, left bottom, from([[setting:themeheaderbackgroundcolor1]]), to([[setting:thememenu2color]])); /* Chrome, Safari 4+ */
+    background-image: -webkit-linear-gradient(top, [[setting:themeheaderbackgroundcolor1]], [[setting:themeheaderbackgroundcolor2]]); /* Chrome 10-25, iOS 5+, Safari 5.1+ */
+    background-image:    -moz-linear-gradient(top, [[setting:themeheaderbackgroundcolor1]], [[setting:themeheaderbackgroundcolor2]]); /* Firefox 3.6-15 */
+    background-image:      -o-linear-gradient(top, [[setting:themeheaderbackgroundcolor1]], [[setting:themeheaderbackgroundcolor2]]); /* Opera 11.10-12.00 */
+    background-image:         linear-gradient(to bottom, [[setting:themeheaderbackgroundcolor1]], [[setting:themeheaderbackgroundcolor2]]); /* Chrome 26, Firefox 16+, IE 10+, Opera 12.10+ */
+    border-radius: 4px 4px 0 0;
+}
+.block .header .title h2,
+.block h3.main {
+    color: [[setting:themelinkcolor]];
+}
+.block .header .title h2:before {
+    color: [[setting:themeiconcolor]];
+}
+.block .header .title {
+    border-bottom-color: [[setting:themeheadercolor]];
+}
+.block .content {
+}
+.hidden-blocks {
+    background: [[setting:themeheaderbackgroundcolor2]];
+}
+.hidden-blocks h4 {
+    color: [[setting:themelinkcolor]];
+}
+.tree_item.branch:before {
+    color: [[setting:themeiconcolor]];
+}
+.collapsed .tree_item.branch:before {
+    color: [[setting:themeiconcolor]];
+}
+
+/* Navbar
+/ --------*/
+
+.navbar-inner {
+    background-color: [[setting:themeheaderbackgroundcolor1]];
+    background-color: [[setting:themeheaderbackgroundcolor1]];
+    background-image: -webkit-gradient(linear, left top, left bottom, from([[setting:themeheaderbackgroundcolor1]]), to([[setting:thememenu2color]])); /* Chrome, Safari 4+ */
+    background-image: -webkit-linear-gradient(top, [[setting:themeheaderbackgroundcolor1]], [[setting:themeheaderbackgroundcolor2]]); /* Chrome 10-25, iOS 5+, Safari 5.1+ */
+    background-image:    -moz-linear-gradient(top, [[setting:themeheaderbackgroundcolor1]], [[setting:themeheaderbackgroundcolor2]]); /* Firefox 3.6-15 */
+    background-image:      -o-linear-gradient(top, [[setting:themeheaderbackgroundcolor1]], [[setting:themeheaderbackgroundcolor2]]); /* Opera 11.10-12.00 */
+    background-image:         linear-gradient(to bottom, [[setting:themeheaderbackgroundcolor1]], [[setting:themeheaderbackgroundcolor2]]); /* Chrome 26, Firefox 16+, IE 10+, Opera 12.10+ */
+    border-color: [[setting:themecolor]];
+}
+.navbar .nav > li > a {
+    color: [[setting:themelinkcolor]];
+}
+.navbar .nav > li > a:hover, .navbar .nav > li > a:focus {
+    color: [[setting:themehovercolor]];
+}
+
+.navbar .nav li.dropdown.open > .dropdown-toggle, .navbar .nav li.dropdown.active > .dropdown-toggle, .navbar .nav li.dropdown.open.active > .dropdown-toggle {
+    background-color: [[setting:themeheaderbackgroundcolor1]];
+    background-color: [[setting:themeheaderbackgroundcolor1]];
+    background-image: -webkit-gradient(linear, left top, left bottom, from([[setting:themeheaderbackgroundcolor1]]), to([[setting:thememenu2color]])); /* Chrome, Safari 4+ */
+    background-image: -webkit-linear-gradient(top, [[setting:themeheaderbackgroundcolor1]], [[setting:themeheaderbackgroundcolor2]]); /* Chrome 10-25, iOS 5+, Safari 5.1+ */
+    background-image:    -moz-linear-gradient(top, [[setting:themeheaderbackgroundcolor1]], [[setting:themeheaderbackgroundcolor2]]); /* Firefox 3.6-15 */
+    background-image:      -o-linear-gradient(top, [[setting:themeheaderbackgroundcolor1]], [[setting:themeheaderbackgroundcolor2]]); /* Opera 11.10-12.00 */
+    background-image:         linear-gradient(to bottom, [[setting:themeheaderbackgroundcolor1]], [[setting:themeheaderbackgroundcolor2]]); /* Chrome 26, Firefox 16+, IE 10+, Opera 12.10+ */
+    color: [[setting:themehovercolor]];
+}
+.breadcrumb {
+    background-color: [[setting:themeheaderbackgroundcolor1]];
+}
+.breadcrumb-nav {
+    background-color: [[setting:themeheaderbackgroundcolor1]];
+}
+
+/* Courselists
+/ ------------- */
+.coursebox > .info > .coursename:before {
+    color:[[setting:themeiconcolor]];
+}
+
+#page-site-index #frontpage-course-list .courses .coursebox {
+    border:1px solid [[setting:themecolor]];
+}
+#page-site-index #frontpage-course-list .courses .coursebox h3.coursename {
+    background-color: [[setting:themeheaderbackgroundcolor1]];
+    background-color: [[setting:themeheaderbackgroundcolor1]];
+    background-image: -webkit-gradient(linear, left top, left bottom, from([[setting:themeheaderbackgroundcolor1]]), to([[setting:thememenu2color]])); /* Chrome, Safari 4+ */
+    background-image: -webkit-linear-gradient(top, [[setting:themeheaderbackgroundcolor1]], [[setting:themeheaderbackgroundcolor2]]); /* Chrome 10-25, iOS 5+, Safari 5.1+ */
+    background-image:    -moz-linear-gradient(top, [[setting:themeheaderbackgroundcolor1]], [[setting:themeheaderbackgroundcolor2]]); /* Firefox 3.6-15 */
+    background-image:      -o-linear-gradient(top, [[setting:themeheaderbackgroundcolor1]], [[setting:themeheaderbackgroundcolor2]]); /* Opera 11.10-12.00 */
+    background-image:         linear-gradient(to bottom, [[setting:themeheaderbackgroundcolor1]], [[setting:themeheaderbackgroundcolor2]]); /* Chrome 26, Firefox 16+, IE 10+, Opera 12.10+ */
+}
+#page-site-index #frontpage-course-list .courses .coursebox h3.coursename a {
+    color: [[setting:themelinkcolor]];
+}
+#page-site-index #frontpage-course-list .courses .coursebox .content .courseimage img {
+    background-color:[[setting:themebackgroundcolor]];
+}
+
+/* TabTopics panel
+ * --------------- */
+
+.yui3-skin-sam .yui3-tabview-panel {
+    background-color: [[setting:themebackgroundcolor]] !important;
+}
+
+/* Pop-up Modal information windows */
+
+.moodle-dialogue-base .moodle-dialogue-wrap .moodle-dialogue-hd, .moodle-dialogue-base .moodle-dialogue-wrap .moodle-dialogue-hd.yui3-widget-hd {
+    background-color: [[setting:themeheaderbackgroundcolor1]];
+    background-image: -webkit-gradient(linear, left top, left bottom, from([[setting:themeheaderbackgroundcolor1]]), to([[setting:thememenu2color]])); /* Chrome, Safari 4+ */
+    background-image: -webkit-linear-gradient(top, [[setting:themeheaderbackgroundcolor1]], [[setting:themeheaderbackgroundcolor2]]); /* Chrome 10-25, iOS 5+, Safari 5.1+ */
+    background-image:    -moz-linear-gradient(top, [[setting:themeheaderbackgroundcolor1]], [[setting:themeheaderbackgroundcolor2]]); /* Firefox 3.6-15 */
+    background-image:      -o-linear-gradient(top, [[setting:themeheaderbackgroundcolor1]], [[setting:themeheaderbackgroundcolor2]]); /* Opera 11.10-12.00 */
+    background-image:         linear-gradient(to bottom, [[setting:themeheaderbackgroundcolor1]], [[setting:themeheaderbackgroundcolor2]]); /* Chrome 26, Firefox 16+, IE 10+, Opera 12.10+ */
+}
+.nav-tabs > li > a {
+    border-color: [[setting:themelinkcolor]] [[setting:themelinkcolor]] [[setting:themeheaderbackgroundcolor2]] [[setting:themelinkcolor]];
+    color: [[setting:themelinkcolor]];
+    background-color: [[setting:themeheaderbackgroundcolor1]];
+    border-radius: 8px 8px 0 0;
+}
+.nav-tabs > li > a:hover, .nav-tabs > li > a:focus {
+    border-color: [[setting:themelinkcolor]] [[setting:themelinkcolor]] [[setting:themeheaderbackgroundcolor2]] [[setting:themelinkcolor]];
+}
+.nav > li > a:hover, .nav > li > a:focus {
+    background-color: [[setting:themeheaderbackgroundcolor2]];
+}
+.nav-tabs > .active > a, .nav-tabs > .active > a:hover, .nav-tabs > .active > a:focus {
+    background-color: [[setting:themeheaderbackgroundcolor1]];
+    background-image: -webkit-gradient(linear, left top, left bottom, from([[setting:themeheaderbackgroundcolor1]]), to([[setting:thememenu2color]])); /* Chrome, Safari 4+ */
+    background-image: -webkit-linear-gradient(top, [[setting:themeheaderbackgroundcolor1]], [[setting:themeheaderbackgroundcolor2]]); /* Chrome 10-25, iOS 5+, Safari 5.1+ */
+    background-image:    -moz-linear-gradient(top, [[setting:themeheaderbackgroundcolor1]], [[setting:themeheaderbackgroundcolor2]]); /* Firefox 3.6-15 */
+    background-image:      -o-linear-gradient(top, [[setting:themeheaderbackgroundcolor1]], [[setting:themeheaderbackgroundcolor2]]); /* Opera 11.10-12.00 */
+    background-image:         linear-gradient(to bottom, [[setting:themeheaderbackgroundcolor1]], [[setting:themeheaderbackgroundcolor2]]); /* Chrome 26, Firefox 16+, IE 10+, Opera 12.10+ */
+    border-color: [[setting:themelinkcolor]] [[setting:themelinkcolor]] [[setting:themeheaderbackgroundcolor2]] [[setting:themelinkcolor]];
+    color: [[setting:themelinkcolor]];
+    border-radius: 8px 8px 0 0;
+}
+
+.course_category_tree .category>.info {
+    background-color: [[setting:themeheaderbackgroundcolor1]];
+    background-image: -webkit-gradient(linear, left top, left bottom, from([[setting:themeheaderbackgroundcolor1]]), to([[setting:thememenu2color]])); /* Chrome, Safari 4+ */
+    background-image: -webkit-linear-gradient(top, [[setting:themeheaderbackgroundcolor1]], [[setting:themeheaderbackgroundcolor2]]); /* Chrome 10-25, iOS 5+, Safari 5.1+ */
+    background-image:    -moz-linear-gradient(top, [[setting:themeheaderbackgroundcolor1]], [[setting:themeheaderbackgroundcolor2]]); /* Firefox 3.6-15 */
+    background-image:      -o-linear-gradient(top, [[setting:themeheaderbackgroundcolor1]], [[setting:themeheaderbackgroundcolor2]]); /* Opera 11.10-12.00 */
+    background-image:         linear-gradient(to bottom, [[setting:themeheaderbackgroundcolor1]], [[setting:themeheaderbackgroundcolor2]]); /* Chrome 26, Firefox 16+, IE 10+, Opera 12.10+ */
+    border: 1px solid [[setting:themelinkcolor]];
+    color: [[setting:themelinkcolor]];
+    border-radius: 8px;
+}
+.forumpost {
+    background-color: [[setting:themebackgroundcolor]];
+}
+.even {
+    background-color: [[setting:themeheaderbackgroundcolor2]] !important;
+}
+.odd {
+    background-color: [[setting:themeheaderbackgroundcolor1]] !important;
+}
+
+/* Login Page *
+ * ---------- */
+body#page-login-index {
+	background:[[setting:themeheadercolor]] url([[setting:loginbg]]) no-repeat top right;
+	background-size: 100% 100%;
+	min-height:1000px;
+}
+#page-login-index .container-fluid {
+	max-width: 450px;
+}
+.loginpanel, .signuppanel {
+	border: 1px solid [[setting:themeheaderbackgroundcolor2]];
+	background: [[setting:themebackgroundcolor]];
+	box-shadow:4px 4px 4px 4px [[setting:themeheaderbackgroundcolor2]];
+}
+.loginpanel h2:before {
+    color:[[setting:themeheadercolor]];
+}
+.loginpanel h2 {
+	color:[[setting:themeheadercolor]];
+}
+.loginbox .loginform .form-label label {
+    color:[[setting:themeheadercolor]];
+}
+.loginbox .loginform .form-input input#username, .loginbox .loginform .form-input input#password {
+    width: 13em;
+    border:4px solid [[setting:themeheaderbackgroundcolor2]];
+    background-color:[[setting:themeheaderbackgroundcolor2]];
+    color:[[setting:themeheadercolor]];
+}
+@media screen and (max-width:960px) {
+body#page-login-index {
+	background-size: 100% 100%;
+	min-height:800px;
+}
+}
+
+@media screen and (max-width:500px) {
+body#page-login-index {
+	background-image:none;
+}
+}

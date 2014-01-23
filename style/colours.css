@@ -14,7 +14,8 @@ a:hover, a:focus, a:active {
     color: [[setting:themehovercolor]];
 }
 .mainheader {
-    background: [[setting:themeheaderbackgroundcolor2]] url([[pix:theme|rpsemboss]]) repeat left top;
+    background: [[setting:themeheaderbackgroundcolor2]] url([[pix:theme|headerwrap]]) repeat left top;
+    background-size:100% 100%;
 }
 .pageheading {
     background: url([[setting:logo]]) no-repeat 3px 3px;

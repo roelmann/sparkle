@@ -33,6 +33,8 @@ defined('MOODLE_INTERNAL') || die;
 $plugin->version   = 2014012300;
 $plugin->requires  = 2013110500;
 $plugin->component = 'theme_sparkle';
+$plugin->maturity  = MATURITY_BETA;
+$plugin->release   = '0.1.23';
 $plugin->dependencies = array(
     'theme_bootstrapbase'  => 2013110500,
 );
